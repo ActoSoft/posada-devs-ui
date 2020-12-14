@@ -1,0 +1,24 @@
+@import './variables';
+
+.footer {
+	width: 100%;
+	height: 4rem;
+	background-color: $color-main;
+	display: grid;
+	place-content: center;
+
+	&__title {
+		color: #ffffff;
+		font-weight: bold;
+		font-size: 1rem;
+		text-align: center;
+
+		& a {
+			color: #ffffff;
+			font-weight: bold;
+			font-size: 1rem;
+			text-align: center;
+			text-decoration: underline;
+		}
+	}
+}

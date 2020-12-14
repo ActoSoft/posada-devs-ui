@@ -1,0 +1,25 @@
+@import './variables';
+
+.btn {
+	padding: 0.8rem 2rem;
+	background-color: #f7be43;
+	color: #ffffff;
+	font-weight: bold;
+	border-radius: 3rem;
+	border: none;
+	letter-spacing: 0.1rem;
+	text-transform: uppercase;
+	font-family: 'Mountains of Christmas', cursive;
+	box-shadow: $sh-sm;
+	outline: none;
+	transition: all 0.2s;
+	text-decoration: none;
+	margin: 0.5rem;
+	z-index: 99;
+	text-align: center;
+
+	&:hover {
+		background-color: #f7c14d;
+		cursor: pointer;
+	}
+}
