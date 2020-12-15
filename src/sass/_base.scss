@@ -1,3 +1,5 @@
+@import './variables';
+
 .landing {
 	width: 100%;
 	max-width: 100vw;
@@ -8,7 +10,7 @@
 	width: 100%;
 	min-height: 100vh;
 	position: relative;
-	background-color: #ffffff;
+	background-color: $color-white;
 	margin-bottom: -2px;
 
 	&-title {

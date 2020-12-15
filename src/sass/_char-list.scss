@@ -6,10 +6,11 @@
 	display: grid;
 	grid-template-rows: auto;
 	row-gap: 4rem;
+	position: relative;
 
 	&__card {
 		width: 100%;
-		height: 6rem;
+		height: 5rem;
 		display: grid;
 		grid-template-columns: 10rem auto;
 		animation: jumping2 4s infinite ease-in-out;
@@ -25,45 +26,53 @@
 				justify-content: center;
 				align-items: center;
 				position: absolute;
-				top: -0.5rem;
-				left: -0.3rem;
+				top: -1.1rem;
+				left: 0;
 				width: 100%;
 				& div {
-					width: 5rem;
-					height: 5rem;
-					border: 0.2rem solid $color-main;
+					width: 5.2rem;
+					height: 5.2rem;
+					border: 0;
 					border-radius: 10rem;
 					background-size: cover;
 					background-position: center;
 				}
 
-				& .photo2 {
+				& .photo0 {
+					z-index: 2;
+				}
+
+				& .photo1 {
 					margin-left: -1rem;
+					z-index: 0;
 				}
 			}
 
 			&__names {
 				display: flex;
 				align-items: center;
-				height: 3rem;
+				height: 2.5rem;
 				flex-direction: column;
 				position: absolute;
-				bottom: -0.5rem;
-				left: -0.7rem;
+				bottom: -1.1rem;
+				left: 0;
 				background-color: $color-main;
-				width: 110%;
-				border-radius: 10rem;
+				width: 100%;
+				border-radius: $br-sm;
 				padding: 0.3rem 0.1rem;
+				z-index: 4;
 
 				& span {
 					text-align: center;
 					color: #ffffff;
-					font-size: 1rem;
+					font-size: 0.8rem;
 					display: grid;
 					line-height: 0px;
 					place-content: center;
 					width: 100%;
 					height: 100%;
+					font-family: 'Amaranth', sans-serif;
+					font-weight: bold;
 				}
 			}
 		}
@@ -73,36 +82,44 @@
 			display: grid;
 			grid-template-rows: auto auto;
 			row-gap: 0.1rem;
-			padding: 0.2rem;
+			padding: 0.2rem 0.5rem 0.2rem 0;
 			&__bg {
 				position: absolute;
 				left: -5rem;
 				height: 100%;
 				width: calc(100% + 5rem);
-				box-shadow: $sh-card;
 				z-index: 0;
 				border-radius: 1rem;
+				background-image: linear-gradient(to right, transparent, $color-white);
 			}
 
 			&__title {
-				font-size: 1rem;
-				color: $color-main;
+				width: 100%;
+				font-size: 0.8rem;
+				color: $color-black;
 				text-align: center;
 				font-weight: bold;
 				width: 100%;
 				height: 100%;
-				display: grid;
-				place-content: center;
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+				font-family: 'Roboto', sans-serif;
+				z-index: 1;
 			}
 			&__date {
-				font-size: 1rem;
-				font-weight: bold;
+				width: 100%;
+				font-size: 0.8rem;
+				color: $color-black;
 				text-align: center;
-				color: $color-gray;
+				font-weight: bold;
 				width: 100%;
 				height: 100%;
-				display: grid;
-				place-content: center;
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+				font-family: 'Roboto', sans-serif;
+				z-index: 1;
 			}
 		}
 	}
